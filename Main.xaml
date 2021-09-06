@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="4474,3250" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1282,2586" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="58">
+    <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -36,7 +36,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="60">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -75,22 +75,23 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="4484,3185" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="678,2521" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_rr" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Dtselect" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="4442,1793" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://bank.shinhan.com/index.jsp#020501010300">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="636,1791" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://bank.shinhan.com/index.jsp#020501010300">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1692" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1690" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="targetItem" />
               <Variable x:TypeArguments="x:String" Name="items" />
@@ -100,13 +101,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="560,1600" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="560,1598" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1508" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1506" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,7 +125,7 @@
                     </ui:Target>
                   </ui:WaitUiElementAppear.Target>
                 </ui:WaitUiElementAppear>
-                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="476,648" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="476,646" sap2010:WorkflowViewState.IdRef="RetryScope_1">
                   <ui:RetryScope.ActivityBody>
                     <ActivityAction>
                       <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="401,472" sap2010:WorkflowViewState.IdRef="Sequence_25">
@@ -259,7 +260,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[dt_rr]" DisplayName="Extract Structured Data 'TBODY  grd_list_1_body_...'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' attr='text' name='currency_id'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='nobr' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='currency_date' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='base' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='tts' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='ttb' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='cas' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='cab' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="100" SimulateClick="True">
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[dt_rr]" DisplayName="Extract Structured Data 'TBODY  grd_list_1_body_...'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' attr='text' name='currency_id'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='nobr' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='currency_date' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='base' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='ttb' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='tts' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='cas' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='cab' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="100" SimulateClick="True">
                             <ui:ExtractData.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7781b1ed-1cfc-46a3-9881-5675989112b7" InformativeScreenshot="6bf3b0c0f0878a4f4c1c9e3cf699b52c" Selector="&lt;webctrl id='grd_list_1_body_tbody' tag='TBODY' /&gt;" WaitForReady="COMPLETE">
                                 <ui:Target.TimeoutMS>
@@ -284,171 +285,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <ui:DatabaseConnect DatabaseConnection="{x:Null}" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="4442,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=test;uid=bedps;pwd=bedps" />
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CurrentRow(&quot;currency_id&quot;).ToString.Equals(&quot;USD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.Equals(&quot;GBP&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.Equals(&quot;CAD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;CHF&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;HKD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;SEK&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;AUD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;DKK&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;NOK&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;SAR&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;KWD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;BHD&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;AED&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;JPY&quot;) Or CurrentRow(&quot;currency_id&quot;).ToString.equals(&quot;EUR&quot;)]" sap:VirtualizedContainerService.HintSize="4442,611" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="USD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '1';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="GBP" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_10" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '2;" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="CAD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_11" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '3';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="CHF" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_12" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '4';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="HKD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_13" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '8';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="SEK" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_14" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '9';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="AUD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_15" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '10';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="DKK" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_16" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '11';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="NOK" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_17" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '14';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="SAR" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id_pinfo" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,130" sap2010:WorkflowViewState.IdRef="ExecuteQuery_18" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '16';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="KWD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_19" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '17';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="BHD" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_20" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '18';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="AED" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_21" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '19';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="JPY" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_22" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '20';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" x:Key="EUR" sap2010:Annotation.AnnotationText="Write Upadte Query Accroding to Other Currency Id" CommandType="Text" sap:VirtualizedContainerService.HintSize="334,119" sap2010:WorkflowViewState.IdRef="ExecuteQuery_23" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath Set currency_id = '21';" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
-        <ui:ExecuteQuery.Parameters>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:ExecuteQuery.Parameters>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ExecuteQuery>
-    </Switch>
-    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="4442,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate" ConnectionString="Dsn=test;uid=bedps;pwd=bedps" />
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="4442,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_8" ProviderName="System.Data.Odbc" Sql="insert into dayexrate select* from dt_rr" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
+    <ui:DatabaseConnect DatabaseConnection="{x:Null}" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="636,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=test;uid=bedps;pwd=bedps" />
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[Dtselect]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_24" ProviderName="System.Data.Odbc" Sql="Select* from dayexrate_uipath" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="4442,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate set book= floor(base)" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
+    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="636,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate_uipath" ConnectionString="Dsn=test;uid=bedps;pwd=bedps" />
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath set book= floor(base)" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="4442,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate&#xD;&#xA;Set currency_id = Case&#xD;&#xA;When currency_id = 'USD' then 1&#xD;&#xA;When currency_id = 'GBP' then 2&#xD;&#xA;When currency_id = 'CAD' then 3&#xD;&#xA;When currency_id = 'CHF' then 4 &#xD;&#xA;When currency_id = 'HKD' then 8  &#xD;&#xA;When currency_id = 'SEK' then 9&#xD;&#xA;When currency_id = 'AUD' then 10&#xD;&#xA;When currency_id = 'DKK' then 11&#xD;&#xA;When currency_id = 'NOK' then 14&#xD;&#xA;When currency_id = 'SAR' then 16&#xD;&#xA;When currency_id = 'KWD' then 17&#xD;&#xA;When currency_id = 'BHD' then 18&#xD;&#xA;When currency_id = 'AED' then 19&#xD;&#xA;When currency_id = 'JPY' then 20&#xD;&#xA;When currency_id = 'EUR' then 21&#xD;&#xA;End&#xD;&#xA;Where&#xD;&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xD;&#xA;Set currency_id = Case&#xD;&#xA;When currency_id = 'USD' then 1&#xD;&#xA;When currency_id = 'GBP' then 2&#xD;&#xA;When currency_id = 'CAD' then 3&#xD;&#xA;When currency_id = 'CHF' then 4 &#xD;&#xA;When currency_id = 'HKD' then 8  &#xD;&#xA;When currency_id = 'SEK' then 9&#xD;&#xA;When currency_id = 'AUD' then 10&#xD;&#xA;When currency_id = 'DKK' then 11&#xD;&#xA;When currency_id = 'NOK' then 14&#xD;&#xA;When currency_id = 'SAR' then 16&#xD;&#xA;When currency_id = 'KWD' then 17&#xD;&#xA;When currency_id = 'BHD' then 18&#xD;&#xA;When currency_id = 'AED' then 19&#xD;&#xA;When currency_id = 'JPY' then 20&#xD;&#xA;When currency_id = 'EUR' then 21&#xD;&#xA;End&#xD;&#xA;Where&#xD;&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=test;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
