@@ -300,9 +300,9 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="678,258" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="678,258" sap2010:WorkflowViewState.IdRef="CommentOut_6">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,180" sap2010:WorkflowViewState.IdRef="Sequence_35">
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,180" sap2010:WorkflowViewState.IdRef="Sequence_36">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
