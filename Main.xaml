@@ -300,7 +300,7 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xA;Set currency_id = Case&#xA;When currency_id = 'USD' then 1&#xA;When currency_id = 'GBP' then 2&#xA;When currency_id = 'CAD' then 3&#xA;When currency_id = 'CHF' then 4 &#xA;When currency_id = 'HKD' then 8  &#xA;When currency_id = 'SEK' then 9&#xA;When currency_id = 'AUD' then 10&#xA;When currency_id = 'DKK' then 11&#xA;When currency_id = 'NOK' then 14&#xA;When currency_id = 'SAR' then 16&#xA;When currency_id = 'KWD' then 17&#xA;When currency_id = 'BHD' then 18&#xA;When currency_id = 'AED' then 19&#xA;When currency_id = 'JPY' then 20&#xA;When currency_id = 'EUR' then 21&#xA;END&#xA;Where&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xD;&#xA;Set currency_id = Case&#xD;&#xA;When currency_id = 'USD' then 1&#xD;&#xA;When currency_id = 'GBP' then 2&#xD;&#xA;When currency_id = 'CAD' then 3&#xD;&#xA;When currency_id = 'CHF' then 4 &#xD;&#xA;When currency_id = 'HKD' then 8  &#xD;&#xA;When currency_id = 'SEK' then 9&#xD;&#xA;When currency_id = 'AUD' then 10&#xD;&#xA;When currency_id = 'DKK' then 11&#xD;&#xA;When currency_id = 'NOK' then 14&#xD;&#xA;When currency_id = 'SAR' then 16&#xD;&#xA;When currency_id = 'KWD' then 17&#xD;&#xA;When currency_id = 'BHD' then 18&#xD;&#xA;When currency_id = 'AED' then 19&#xD;&#xA;When currency_id = 'JPY' then 20&#xD;&#xA;When currency_id = 'EUR' then 21&#xD;&#xA;END&#xD;&#xA;Where&#xD;&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
@@ -310,12 +310,12 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_10" ProviderName="System.Data.Odbc" Sql="select to number(currency_id) from dayexrate_uipath" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2 SELECT * FROM dayexrate_uipath WHERE currency_id in ('1','20','21'); " ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2 &#xD;&#xA;SELECT * &#xD;&#xA;FROM dayexrate_uipath&#xD;&#xA;WHERE currency_id in ('USD','JPY','EUR'); &#xD;&#xA;" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_10" ProviderName="System.Data.Odbc" Sql="SELECT To_Number(currency_id) FROM dayexrate_uipath2" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
