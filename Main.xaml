@@ -307,7 +307,7 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC)&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xD;&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xD;&#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC, currency_id asc)&#xD;&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
