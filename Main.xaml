@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1253,2802" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1307,2710" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -36,7 +36,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="60">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -75,30 +75,29 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="720,2737" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="678,2645" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_rr" />
       <Variable x:TypeArguments="sd:DataTable" Name="Dtselect" />
-      <Variable x:TypeArguments="ui:Browser" Name="uibrowser" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="678,2007" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[uibrowser]" Url="https://bank.shinhan.com/index.jsp#020501010300">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="636,1915" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://bank.shinhan.com/index.jsp#020501010300">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="644,1906" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <Sequence sap:VirtualizedContainerService.HintSize="602,1814" sap2010:WorkflowViewState.IdRef="Sequence_33">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1814" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,1722" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="targetItem" />
                 <Variable x:TypeArguments="x:String" Name="items" />
@@ -108,181 +107,174 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="560,1660" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="518,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1568" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1568" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
+                  <ui:WaitUiElementAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad1e930a-60dc-48aa-954f-7de768270cbe" InformativeScreenshot="7f7e02720ae00253acfe3d36212d2cd3" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitUiElementAppear.Target>
+                </ui:WaitUiElementAppear>
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="476,708" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="401,534" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="GetFullText_2">
+                          <ui:GetFullText.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68ebc374-5ca4-438d-b261-d8fffd7bb576" InformativeScreenshot="7f7e02720ae00253acfe3d36212d2cd3" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetFullText.Target>
+                          <ui:GetFullText.Text>
+                            <OutArgument x:TypeArguments="x:String">[items]</OutArgument>
+                          </ui:GetFullText.Text>
+                        </ui:GetFullText>
+                        <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[targetItem]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[items.Split(vbCrLf.ToCharArray,StringSplitOptions.RemoveEmptyEntries).Last()]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[targetItem]">
+                          <ui:SelectItem.Items>
+                            <scg:List x:TypeArguments="x:String" Capacity="50">
+                              <x:String>90회차 ( 11:27:12 )</x:String>
+                              <x:String>89회차 ( 11:23:45 )</x:String>
+                              <x:String>88회차 ( 11:23:15 )</x:String>
+                              <x:String>87회차 ( 11:21:51 )</x:String>
+                              <x:String>86회차 ( 11:19:54 )</x:String>
+                              <x:String>85회차 ( 11:18:00 )</x:String>
+                              <x:String>84회차 ( 11:11:31 )</x:String>
+                              <x:String>83회차 ( 11:10:29 )</x:String>
+                              <x:String>82회차 ( 11:09:57 )</x:String>
+                              <x:String>81회차 ( 11:08:46 )</x:String>
+                              <x:String>80회차 ( 11:07:24 )</x:String>
+                              <x:String>79회차 ( 11:05:06 )</x:String>
+                              <x:String>78회차 ( 11:04:07 )</x:String>
+                              <x:String>77회차 ( 11:02:49 )</x:String>
+                              <x:String>76회차 ( 11:00:32 )</x:String>
+                              <x:String>75회차 ( 10:59:05 )</x:String>
+                              <x:String>74회차 ( 10:57:48 )</x:String>
+                              <x:String>73회차 ( 10:56:08 )</x:String>
+                              <x:String>72회차 ( 10:54:52 )</x:String>
+                              <x:String>71회차 ( 10:53:55 )</x:String>
+                              <x:String>70회차 ( 10:53:04 )</x:String>
+                              <x:String>69회차 ( 10:52:05 )</x:String>
+                              <x:String>68회차 ( 10:50:26 )</x:String>
+                              <x:String>67회차 ( 10:49:53 )</x:String>
+                              <x:String>66회차 ( 10:48:32 )</x:String>
+                              <x:String>65회차 ( 10:47:07 )</x:String>
+                              <x:String>64회차 ( 10:46:31 )</x:String>
+                              <x:String>63회차 ( 10:45:53 )</x:String>
+                              <x:String>62회차 ( 10:43:06 )</x:String>
+                              <x:String>61회차 ( 10:42:39 )</x:String>
+                              <x:String>60회차 ( 10:35:07 )</x:String>
+                              <x:String>59회차 ( 10:31:17 )</x:String>
+                              <x:String>58회차 ( 10:23:29 )</x:String>
+                              <x:String>57회차 ( 10:21:32 )</x:String>
+                              <x:String>56회차 ( 10:20:05 )</x:String>
+                              <x:String>55회차 ( 10:17:39 )</x:String>
+                              <x:String>54회차 ( 10:17:06 )</x:String>
+                              <x:String>53회차 ( 10:16:30 )</x:String>
+                              <x:String>52회차 ( 10:15:40 )</x:String>
+                              <x:String>51회차 ( 10:14:53 )</x:String>
+                              <x:String>50회차 ( 10:14:23 )</x:String>
+                              <x:String>49회차 ( 10:12:19 )</x:String>
+                              <x:String>48회차 ( 10:11:49 )</x:String>
+                              <x:String>47회차 ( 10:07:25 )</x:String>
+                              <x:String>46회차 ( 10:06:23 )</x:String>
+                              <x:String>45회차 ( 10:05:43 )</x:String>
+                              <x:String>44회차 ( 10:04:32 )</x:String>
+                              <x:String>43회차 ( 10:03:58 )</x:String>
+                              <x:String>42회차 ( 10:02:34 )</x:String>
+                              <x:String>41회차 ( 10:02:01 )</x:String>
+                            </scg:List>
+                          </ui:SelectItem.Items>
+                          <ui:SelectItem.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f4b216e-06d8-4932-8322-9a12ec980e70" InformativeScreenshot="a59eb8b4477cde422fcf0c7457b651e5" Selector="&lt;webctrl id='sbx_notiSeq_input_0' tag='SELECT' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:SelectItem.Target>
+                        </ui:SelectItem>
+                        <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="359,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
+                <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  btn_search'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="75" OffsetY="9" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="240bdc69-11b7-430e-b2c9-efc35d532515" InformativeScreenshot="58c4c186224711c5e843fc90a3a40d72" Selector="&lt;html title='환율조회-회차별 조회 | 신한은행 개인뱅킹' /&gt;&lt;webctrl id='btn_search' tag='A' /&gt;" WaitForReady="COMPLETE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_29">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
-                    <ui:WaitUiElementAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad1e930a-60dc-48aa-954f-7de768270cbe" InformativeScreenshot="7f7e02720ae00253acfe3d36212d2cd3" Selector="&lt;webctrl tag='SELECT' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:WaitUiElementAppear.Target>
-                  </ui:WaitUiElementAppear>
-                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="476,646" sap2010:WorkflowViewState.IdRef="RetryScope_1">
-                    <ui:RetryScope.ActivityBody>
-                      <ActivityAction>
-                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="401,472" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser '          Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="144bda9b75132d4e5aafb1e56995fd97" Selector="&lt;html title='환율조회-회차별 조회 | 신한은행 개인뱅킹' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_28">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="GetFullText_2">
-                            <ui:GetFullText.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68ebc374-5ca4-438d-b261-d8fffd7bb576" InformativeScreenshot="7f7e02720ae00253acfe3d36212d2cd3" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[dt_rr]" DisplayName="Extract Structured Data 'TBODY  grd_list_1_body_...'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' attr='text' name='currency_id'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='nobr' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='currency_date' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='base' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='ttb' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='tts' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='cas' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='cab' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="100" SimulateClick="True">
+                            <ui:ExtractData.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7781b1ed-1cfc-46a3-9881-5675989112b7" InformativeScreenshot="6bf3b0c0f0878a4f4c1c9e3cf699b52c" Selector="&lt;webctrl id='grd_list_1_body_tbody' tag='TBODY' /&gt;" WaitForReady="COMPLETE">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
                               </ui:Target>
-                            </ui:GetFullText.Target>
-                            <ui:GetFullText.Text>
-                              <OutArgument x:TypeArguments="x:String">[items]</OutArgument>
-                            </ui:GetFullText.Text>
-                          </ui:GetFullText>
-                          <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[targetItem]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[items.Split(vbCrLf.ToCharArray,StringSplitOptions.RemoveEmptyEntries).Last()]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  sbx_notiSeq_inp...'" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[targetItem]">
-                            <ui:SelectItem.Items>
-                              <scg:List x:TypeArguments="x:String" Capacity="50">
-                                <x:String>90회차 ( 11:27:12 )</x:String>
-                                <x:String>89회차 ( 11:23:45 )</x:String>
-                                <x:String>88회차 ( 11:23:15 )</x:String>
-                                <x:String>87회차 ( 11:21:51 )</x:String>
-                                <x:String>86회차 ( 11:19:54 )</x:String>
-                                <x:String>85회차 ( 11:18:00 )</x:String>
-                                <x:String>84회차 ( 11:11:31 )</x:String>
-                                <x:String>83회차 ( 11:10:29 )</x:String>
-                                <x:String>82회차 ( 11:09:57 )</x:String>
-                                <x:String>81회차 ( 11:08:46 )</x:String>
-                                <x:String>80회차 ( 11:07:24 )</x:String>
-                                <x:String>79회차 ( 11:05:06 )</x:String>
-                                <x:String>78회차 ( 11:04:07 )</x:String>
-                                <x:String>77회차 ( 11:02:49 )</x:String>
-                                <x:String>76회차 ( 11:00:32 )</x:String>
-                                <x:String>75회차 ( 10:59:05 )</x:String>
-                                <x:String>74회차 ( 10:57:48 )</x:String>
-                                <x:String>73회차 ( 10:56:08 )</x:String>
-                                <x:String>72회차 ( 10:54:52 )</x:String>
-                                <x:String>71회차 ( 10:53:55 )</x:String>
-                                <x:String>70회차 ( 10:53:04 )</x:String>
-                                <x:String>69회차 ( 10:52:05 )</x:String>
-                                <x:String>68회차 ( 10:50:26 )</x:String>
-                                <x:String>67회차 ( 10:49:53 )</x:String>
-                                <x:String>66회차 ( 10:48:32 )</x:String>
-                                <x:String>65회차 ( 10:47:07 )</x:String>
-                                <x:String>64회차 ( 10:46:31 )</x:String>
-                                <x:String>63회차 ( 10:45:53 )</x:String>
-                                <x:String>62회차 ( 10:43:06 )</x:String>
-                                <x:String>61회차 ( 10:42:39 )</x:String>
-                                <x:String>60회차 ( 10:35:07 )</x:String>
-                                <x:String>59회차 ( 10:31:17 )</x:String>
-                                <x:String>58회차 ( 10:23:29 )</x:String>
-                                <x:String>57회차 ( 10:21:32 )</x:String>
-                                <x:String>56회차 ( 10:20:05 )</x:String>
-                                <x:String>55회차 ( 10:17:39 )</x:String>
-                                <x:String>54회차 ( 10:17:06 )</x:String>
-                                <x:String>53회차 ( 10:16:30 )</x:String>
-                                <x:String>52회차 ( 10:15:40 )</x:String>
-                                <x:String>51회차 ( 10:14:53 )</x:String>
-                                <x:String>50회차 ( 10:14:23 )</x:String>
-                                <x:String>49회차 ( 10:12:19 )</x:String>
-                                <x:String>48회차 ( 10:11:49 )</x:String>
-                                <x:String>47회차 ( 10:07:25 )</x:String>
-                                <x:String>46회차 ( 10:06:23 )</x:String>
-                                <x:String>45회차 ( 10:05:43 )</x:String>
-                                <x:String>44회차 ( 10:04:32 )</x:String>
-                                <x:String>43회차 ( 10:03:58 )</x:String>
-                                <x:String>42회차 ( 10:02:34 )</x:String>
-                                <x:String>41회차 ( 10:02:01 )</x:String>
-                              </scg:List>
-                            </ui:SelectItem.Items>
-                            <ui:SelectItem.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0f4b216e-06d8-4932-8322-9a12ec980e70" InformativeScreenshot="a59eb8b4477cde422fcf0c7457b651e5" Selector="&lt;webctrl id='sbx_notiSeq_input_0' tag='SELECT' /&gt;">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:SelectItem.Target>
-                          </ui:SelectItem>
+                            </ui:ExtractData.Target>
+                          </ui:ExtractData>
                         </Sequence>
                       </ActivityAction>
-                    </ui:RetryScope.ActivityBody>
-                    <ui:RetryScope.Condition>
-                      <ActivityFunc x:TypeArguments="x:Boolean" />
-                    </ui:RetryScope.Condition>
-                  </ui:RetryScope>
-                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  btn_search'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
-                    <ui:Click.CursorPosition>
-                      <ui:CursorPosition OffsetX="75" OffsetY="9" Position="TopLeft" />
-                    </ui:Click.CursorPosition>
-                    <ui:Click.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="240bdc69-11b7-430e-b2c9-efc35d532515" InformativeScreenshot="58c4c186224711c5e843fc90a3a40d72" Selector="&lt;html title='환율조회-회차별 조회 | 신한은행 개인뱅킹' /&gt;&lt;webctrl id='btn_search' tag='A' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:Click.Target>
-                  </ui:Click>
-                  <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser '          Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="144bda9b75132d4e5aafb1e56995fd97" Selector="&lt;html title='환율조회-회차별 조회 | 신한은행 개인뱅킹' /&gt;">
-                      <ui:BrowserScope.Body>
-                        <ActivityAction x:TypeArguments="x:Object">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[dt_rr]" DisplayName="Extract Structured Data 'TBODY  grd_list_1_body_...'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' attr='text' name='currency_id'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='nobr' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='currency_date' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='base' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='ttb' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='tts' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;/column&gt;&lt;column exact='1' name='cas' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='6' /&gt;&lt;/column&gt;&lt;column exact='1' name='cab' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='7' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="100" SimulateClick="True">
-                              <ui:ExtractData.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7781b1ed-1cfc-46a3-9881-5675989112b7" InformativeScreenshot="6bf3b0c0f0878a4f4c1c9e3cf699b52c" Selector="&lt;webctrl id='grd_list_1_body_tbody' tag='TBODY' /&gt;" WaitForReady="COMPLETE">
-                                  <ui:Target.TimeoutMS>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:Target.TimeoutMS>
-                                </ui:Target>
-                              </ui:ExtractData.Target>
-                            </ui:ExtractData>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:BrowserScope.Body>
-                    </ui:BrowserScope>
-                  </Sequence>
+                    </ui:BrowserScope.Body>
+                  </ui:BrowserScope>
                 </Sequence>
               </Sequence>
             </Sequence>
@@ -295,19 +287,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <ui:DatabaseConnect DatabaseConnection="{x:Null}" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="678,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
-    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="678,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate_uipath" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath set book= floor(base)" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:DatabaseConnect DatabaseConnection="{x:Null}" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="636,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
+    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="636,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate_uipath" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath set book= floor(base)" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xA;Set currency_id = Case&#xA;When currency_id = 'USD' then 1&#xA;When currency_id = 'GBP' then 2&#xA;When currency_id = 'CAD' then 3&#xA;When currency_id = 'CHF' then 4 &#xA;When currency_id = 'HKD' then 8  &#xA;When currency_id = 'SEK' then 9&#xA;When currency_id = 'AUD' then 10&#xA;When currency_id = 'DKK' then 11&#xA;When currency_id = 'NOK' then 14&#xA;When currency_id = 'SAR' then 16&#xA;When currency_id = 'KWD' then 17&#xA;When currency_id = 'BHD' then 18&#xA;When currency_id = 'AED' then 19&#xA;When currency_id = 'JPY' then 20&#xA;When currency_id = 'EUR' then 21&#xA;END&#xA;Where&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xA;Set currency_id = Case&#xA;When currency_id = 'USD' then 1&#xA;When currency_id = 'GBP' then 2&#xA;When currency_id = 'CAD' then 3&#xA;When currency_id = 'CHF' then 4 &#xA;When currency_id = 'HKD' then 8  &#xA;When currency_id = 'SEK' then 9&#xA;When currency_id = 'AUD' then 10&#xA;When currency_id = 'DKK' then 11&#xA;When currency_id = 'NOK' then 14&#xA;When currency_id = 'SAR' then 16&#xA;When currency_id = 'KWD' then 17&#xA;When currency_id = 'BHD' then 18&#xA;When currency_id = 'AED' then 19&#xA;When currency_id = 'JPY' then 20&#xA;When currency_id = 'EUR' then 21&#xA;END&#xA;Where&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="678,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xD;&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xD;&#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC, currency_id asc)&#xD;&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC)&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
