@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1307,3026" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1307,3088" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="678,2961" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="678,3023" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_rr" />
       <Variable x:TypeArguments="sd:DataTable" Name="Dtselect" />
@@ -85,19 +85,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="636,2061" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://bank.shinhan.com/index.jsp#020501010300">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="636,2123" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://bank.shinhan.com/index.jsp#020501010300">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="602,1960" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <Sequence sap:VirtualizedContainerService.HintSize="602,2022" sap2010:WorkflowViewState.IdRef="Sequence_33">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,1868" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="560,1930" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="targetItem" />
                 <Variable x:TypeArguments="x:String" Name="items" />
@@ -108,7 +108,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="518,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1714" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence DisplayName="기본" sap:VirtualizedContainerService.HintSize="518,1776" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -256,6 +256,7 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
+                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
                 <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_29">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -300,13 +301,13 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
     <ui:DatabaseConnect DatabaseConnection="{x:Null}" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="636,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
-    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="636,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate_uipath3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath3 set book= floor(base)" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" DataTable="[dt_rr]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="636,115" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" ProviderName="System.Data.Odbc" TableName="dayexrate_uipath" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps" />
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath set book= floor(base)" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath3&#xD;&#xA;Set currency_id = Case&#xD;&#xA;When currency_id = 'USD' then 1&#xD;&#xA;When currency_id = 'GBP' then 2&#xD;&#xA;When currency_id = 'CAD' then 3&#xD;&#xA;When currency_id = 'CHF' then 4 &#xD;&#xA;When currency_id = 'HKD' then 8  &#xD;&#xA;When currency_id = 'SEK' then 9&#xD;&#xA;When currency_id = 'AUD' then 10&#xD;&#xA;When currency_id = 'DKK' then 11&#xD;&#xA;When currency_id = 'NOK' then 14&#xD;&#xA;When currency_id = 'SAR' then 16&#xD;&#xA;When currency_id = 'KWD' then 17&#xD;&#xA;When currency_id = 'BHD' then 18&#xD;&#xA;When currency_id = 'AED' then 19&#xD;&#xA;When currency_id = 'JPY' then 20&#xD;&#xA;When currency_id = 'EUR' then 21&#xD;&#xA;END&#xD;&#xA;Where&#xD;&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="636,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="System.Data.Odbc" Sql="update dayexrate_uipath&#xD;&#xA;Set currency_id = Case&#xD;&#xA;When currency_id = 'USD' then 1&#xD;&#xA;When currency_id = 'GBP' then 2&#xD;&#xA;When currency_id = 'CAD' then 3&#xD;&#xA;When currency_id = 'CHF' then 4 &#xD;&#xA;When currency_id = 'HKD' then 8  &#xD;&#xA;When currency_id = 'SEK' then 9&#xD;&#xA;When currency_id = 'AUD' then 10&#xD;&#xA;When currency_id = 'DKK' then 11&#xD;&#xA;When currency_id = 'NOK' then 14&#xD;&#xA;When currency_id = 'SAR' then 16&#xD;&#xA;When currency_id = 'KWD' then 17&#xD;&#xA;When currency_id = 'BHD' then 18&#xD;&#xA;When currency_id = 'AED' then 19&#xD;&#xA;When currency_id = 'JPY' then 20&#xD;&#xA;When currency_id = 'EUR' then 21&#xD;&#xA;END&#xD;&#xA;Where&#xD;&#xA;currency_id In ('USD','GBP','CAD','CHF','HKD','SEK','AUD','DKK','NOK','SAR','KWD','BHD','AED','JPY', 'EUR')" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
@@ -319,7 +320,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xD;&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xD;&#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC, currency_id asc)&#xD;&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
+          <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dt_rr]" DisplayName="PATH 1,20,21 데이터포함 데이터를 PATH로 옮김" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="System.Data.Odbc" Sql="INSERT INTO dayexrate_uipath2(currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab)&#xA;select currency_date, currency_id, ttcomr, cacomr, discnt, tts, ttb, base, book, cas, cab &#xA;from (SELECT * FROM dayexrate_uipath ORDER BY currency_date DESC, currency_id asc)&#xA;where currency_id in ('1','20','21') and rownum &lt;=3" ConnectionString="Dsn=gora;uid=bedps;pwd=bedps">
             <ui:ExecuteQuery.Parameters>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:ExecuteQuery.Parameters>
