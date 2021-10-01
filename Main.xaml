@@ -224,7 +224,7 @@
                             </ui:Target>
                           </ui:SelectItem.Target>
                         </ui:SelectItem>
-                        <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="359,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                        <Delay Duration="00:00:09" sap:VirtualizedContainerService.HintSize="359,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
                       </Sequence>
                     </ActivityAction>
                   </ui:RetryScope.ActivityBody>
